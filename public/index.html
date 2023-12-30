@@ -1,792 +1,547 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Refuge Gospel International Church | Theatre Of Solace</title>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="keywords" content="refuge, safety, gospel, refugegospel, rgic, Jesus, churches in Port Harcourt, Churches in Nigeria, REV DR. FAVOUR ADESHINA, love of God ">
 	<meta name="description" content="Are you depressed or in any sort of trouble? This is a place of Safety. Refuge Gospel International Church is a Church that gives Solace to your Spirit, Soul and Body.">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="./js/app.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	 <!-- Load the Firebase library before loading the body. -->
-	 <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
 
-	 <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
-	 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Bootstrap icon -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./ css/open-iconic-bootstrap.min.css css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="./ css/animate.css">
-    
-    <link rel="stylesheet" href="./ css/owl-carousel.min.css">
-    <link rel="stylesheet" href="./ css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./ css/magnific-popup.css">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="./ css/aos.css">
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
 
-    <link rel="stylesheet" href="./ css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="./ css/flaticon.css">
-    <link rel="stylesheet" href="./ css/icomoon.css">
-	<link rel="stylesheet" href="./ css/style.css">
-	<link rel="stylesheet" href="./ css/modal.css">
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
-	
+    <!-- Include Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Include Slick Carousel theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include Slick Carousel JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-	<link rel="icon" href="./images/church logo 1.png">
+</head>
 
+<body id="top">
 
-  </head>
-  <body data-target=".site-navbar-target" data-offset="300">
-	  
-	<nav class="navbar sticky-top navbar-expand-md">
-		<a class="navbar-brand" href="index.html"><img src="./images/church logo 1.png"  alt="refuge gospel logo"/></a>
-		<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="bg-dark w-100 collapse navbar-collapse " id="main-navigation">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<!-- <a class="nav-link" href="FagMission.html">FAG Mission</a> -->
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./gallery.html">Gallery</a>
-				</li>
-				
-				<!-- <li class="nav-item">
-					<a class="nav-link" href="excerpt.html">Excerpt</a>
-				</li>	 -->
-				<li class="nav-item">
-					<a class="nav-link" href="./aboutUs.html">About US</a>
-				</li>    
-				<li class="nav-item">
-					<a class="nav-link" href="salvation.html">Prayer of Salvation</a>
-				</li> 
-			</ul>
-		</div>	
-	</nav>
-	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item">
-				<img class="d-block w-100 h-100" src="./images/Mercy Found Me Episody final.png" alt="banner1">
-			  </div>
-
-			<div class="carousel-item">
-				<img class="d-block w-100 h-100" src="./images/we.jpeg" alt="banner1">
-			  </div>
-
-		  <div class="carousel-item active">
-			<img class="d-block w-100 " src="./images/2022 Theme RGIC final.png" alt="banner1">
-		  </div>
-		  
-		  <div class="carousel-item">
-			<img class="d-block w-100 h-100" src="./images/Attain Greater Heights with God (2).png" alt="banner1">
-		  </div>
-
-		 
-		</div>
-		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		  </a>
-		  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		  </a>
-	  </div>
-	
-	    <!--sliders-->
-		
-		  <br>
-	<!--sliders ends-->	 
-	<p class=" p-5 text-center bg-dark text-light" style="font-size: 25px;font-weight: bold;">WELCOME TO RGIC FAMILY!</p>
-	<hr class="bg-info">
-	<p class="text-dark p-5" style="font-size: 15px;font-weight: bold;">Experience the safety of God, the love of a family and the joy of serving God!
-	<br><br> Welcome to Refuge Gospel International Church a church that gives solace to your Spirit, Soul and Body.
-	<br> A church that is interested in your spiritual growth and maturity, through the undiluted word of God, and prayers.</p>
-		
-	<section class="ftco-section ftco-services-2 bg-dark"id="services-section">
-			<div class="container-fluid">
-				<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate ">
-          	<span class="subheading" style="color: white;" >Services</span>
-			<h2 class="mb-4" style="color: white;">Refuge Gospel International Church Services</h2>
-            <p>We operate through the following schemes</p>
-          </div>
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <div class="row">
-        	<div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-              <div class="icon"><span><i class="bi bi-stopwatch"></i></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Hope For Tomorrow Initiative</h3>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-              <div class="icon"><span><i class="bi bi-book"></i></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Refuge Glory Literature and Tracts</h3>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-              <div class="icon"><span><i class="bi bi-people"></i></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Community Outreaches</h3>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-              <div class="icon"><span><i class="bi bi-lightbulb"></i></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Moral Revitilization</h3>
-              </div>
-            </div>      
-		  </div>
-		  
-		  <div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-				<div class="icon"><span><i class="bi bi-pen"></i></span></div>
-				<div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Education For All Campaign </h3>
-              </div>
-            </div>      
-		  </div>
-		  
-          <div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-              <div class="icon"><span><i class="bi bi-graph-up"></i></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Refuge Empowerment Scheme</h3>
-              </div>
-            </div>      
-          </div>
-		</div>
-		<br>
-		<br>
-		<br>
-
-		<div class="row">
-        	<div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-              <div class="icon"><span><i class="bi bi-shield-check"></i></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Provision of Health Subsidy for the public</h3>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-				<div class="icon"><span><i class="bi bi-sunset"></i></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Building of Public Recreation Centres</h3>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-				<div class="icon"><span><i class="bi bi-bookshelf"></i></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Provision of Public Libraries</h3>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-				<div class="icon"><span><i class="bi bi-door-open"></i></span></div>
-				<div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Provision of Public Rehabilitation Centres</h3>
-              </div>
-            </div>      
-		  </div>
-		  
-		  <div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-              <div class="icon"><span><i class="bi bi-patch-plus"></i></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Support campaign against HIV / AIDS </h3>
-              </div>
-            </div>      
-		  </div>
-		  
-          <div class="col-md d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services text-center d-block">
-              <div class="icon"><span><i class="bi bi-arrow-90deg-up"></i></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3" style="color: white;">Economic Empowerment programs</h3>
-              </div>
-            </div>      
-          </div>
-		</div>
-		
-		</section>
-
-<br>
-		<section class="ftco-section bg-dark text-center" id="sermons-section">
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<span class="subheading text-light">Services</span>
-            <h2 class="mb-4 text-light ">Our Sermons and Messages</h2>
-            <p>Download and watch inspirational messages from our man of God Rev. Dr. Favour A. Adeshina</p>
-          </div>
-        </div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="sermon-wrap ftco-animate">
-								<div class="img d-flex align-items-center justify-content-center" style="background-image: url(./images/contending\ for\ mastery.png);">
-									<div class="text-content p-4 text-center">
-										<!-- <span>by Senior pastor:</span>
-										<h3>Rev. Dr. Favour Adeshina</h3> -->
-										<p class="">
-												<!-- <a href="Checkbacklater" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> Watch</a> -->
-												<a href="https://audiomack.com/favourdgreat/song/contending-for-mastery" class="btn-custom p-2 text-center"><span class="icon-download"></span> Download</a>
-											</p>
-									</div>
-								</div>
-								<div class="text pt-3 text-center text-light">
-									<h2 class="mb-0"><a class = "text-light" href="https://audiomack.com/favourdgreat/song/contending-for-mastery">Contending For Mastery</a></h2>
-									<div class="meta">
-										  <p class="mb-0">
-											  <!-- <span>January 10th, 2021</span> -->
-										  </p>
-									  </div>
-								</div>
-							  </div>
-					</div>
-        	<div class="col-md-4">
-        		<div class="sermon-wrap ftco-animate">
-    					<div class="img d-flex align-items-center justify-content-center" style="background-image: url(./images/justification\ for\ contending\ for\ mastery.png);">
-    						<div class="text-content p-4 text-center">
-    							<!-- <span>by Senior pastor:</span>
-    							<h3>Rev. Dr. Favour Adeshina</h3> -->
-    							<p class="">
-										<!-- <a href="Checkbacklater" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> Watch</a> -->
-										<a href="https://audiomack.com/favourdgreat/song/justification-for-contending-for-mastery" class="btn-custom p-2 text-center"><span class="icon-download"></span> Download</a>
-									</p>
-    						</div>
-    					</div>
-    					<div class="text pt-3 text-center text-light">
-    						<h2 class="mb-0 "><a class = "text-light" href="https://audiomack.com/favourdgreat/song/justification-for-contending-for-mastery">Justification For Contending For Mastery</a></h2>
-    						<div class="meta">
-		  						<p class="mb-0">
-			  						<!-- <span>January 10th, 2021</span> -->
-		  						</p>
-		  					</div>
-    					</div>
-  					</div>
-        	</div>
-
-        	<div class="col-md-4">
-        		<div class="sermon-wrap ftco-animate">
-    					<div class="img d-flex align-items-center justify-content-center" style="background-image: url(./images/same\ God\ final.png);">
-    						<div class="text-content p-4 text-center">
-    							<!-- <span>by Senior Pastor:</span>
-    							<h3>Rev. Dr. Favour Adeshina</h3> -->
-    							<p class="">
-										<!-- <a href="Checkbacklater" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> Watch</a> -->
-										<a href="https://audiomack.com/favourdgreat/song/same-god" class="btn-custom p-2 text-center"><span class="icon-download"></span> Download</a>
-									</p>
-    						</div>
-    					</div>
-    					<div class="text pt-3 text-center text-light">
-    						<h2 class="mb-0"><a class = "text-light" href="https://audiomack.com/favourdgreat/song/same-god">Same God</a></h2>
-    						<div class="meta">
-		  						<p class="mb-0">
-			  						<!-- <span>May 25th, 2020</span> -->
-		  						</p>
-		  					</div>
-    					</div>
-  					</div>
-        	</div>
-
-        	<div class="col-md-4">
-        		<div class="sermon-wrap ftco-animate">
-    					<div class="img d-flex align-items-center justify-content-center" style="background-image: url(./images/Hope\ for\ value.png);">
-    						<div class="text-content p-4 text-center">
-    							<!-- <span>by Senior Pastor:</span>
-    							<h3>Rev. Dr. Favour Adeshina</h3> -->
-    							<p class="">
-										<!-- <a href="Checkbacklater" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> Watch</a> -->
-										<a href="https://audiomack.com/favourdgreat/song/hope-for-value" class="btn-custom p-2 text-center"><span class="icon-download"></span> Download</a>
-									</p>
-    						</div>
-    					</div>
-    					<div class="text pt-3 text-center text-light">
-    						<h2 class="mb-0"><a class="text-light" href="https://audiomack.com/favourdgreat/song/hope-for-value">Hope For Value</a></h2>
-    						<div class="meta">
-		  						<p class="mb-0">
-			  						<!-- <span>May 22nd, 2020</span> -->
-		  						</p>
-		  					</div>
-    					</div>
-  					</div>
-        	</div>
-        	<div class="col-md-4">
-        		<div class="sermon-wrap ftco-animate">
-    					<div class="img d-flex align-items-center justify-content-center" style="background-image: url(./images/Youth\ Seminar.png);">
-    						<div class="text-content p-4 text-center">
-    							<!-- <span>by Senior Pastor:</span>
-    							<h3>Rev. Dr. Favour Adeshina</h3> -->
-    							<p class="">
-										<!-- <a href="Checkbacklater" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> Watch</a> -->
-										<a href="https://audiomack.com/favourdgreat/song/superlative-service" class="btn-custom p-2 text-center"><span class="icon-download"></span> Download</a>
-									</p>
-    						</div>
-    					</div>
-    					<div class="text pt-3 text-center text-light">
-    						<h2 class="mb-0"><a class="text-light" href="https://audiomack.com/favourdgreat/song/superlative-service">Youth Seminar</a></h2>
-    						<div class="meta">
-		  						<p class="mb-0">
-			  						<!-- <span>July 01, 2019</span> -->
-		  						</p>
-		  					</div>
-    					</div>
-  					</div>
-        	</div>
-        	<div class="col-md-4">
-        		<div class="sermon-wrap ftco-animate">
-    					<div class="img d-flex align-items-center justify-content-center" style="background-image: url(./images/Superlative\ Service.png);">
-    						<div class="text-content p-4 text-center">
-    							<!-- <span>by Senior Pastor:</span>
-    							<h3>Rev. Dr. Favour Adeshina</h3> -->
-    							<p class="">
-										<!-- <a href="Checkbacklater" class="btn-custom mb-2 p-2 text-center popup-vimeo"><span class="icon-play"></span> Watch</a> -->
-										<a href="https://audiomack.com/favourdgreat/song/superlative-service" class="btn-custom p-2 text-center"><span class="icon-download"></span> Download</a>
-									</p>
-    						</div>
-    					</div>
-    					<div class="text pt-3 text-center text-light">
-    						<h2 class="mb-0"><a class="text-light" href="https://audiomack.com/favourdgreat/song/superlative-service">Superlative Service</a></h2>
-    						<div class="meta">
-		  						<p class="mb-0">
-			  						<!-- <span>July 26, 2019</span> -->
-		  						</p>
-		  					</div>
-    					</div>
-  					</div>
-        	</div>
-        </div>
-			</div>
-			<a href="https://audiomack.com/favourdgreat" class="btn btn-outline-light" role="button">See More</a>
-
-			<!-- <button type="button" class="btn btn-outline-light">See More<a href = "https://audiomack.com/favourdgreat"></button></a> -->
-		</section>
-<!-- <br> -->
-		<!-- <section class="ftco-intro" id="events-section">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-				</div>
-			</div>
-		</section>  -->
-
-		<section class="ftco-section bg-light ftco-event" id="events-section">
-			<div class="container-fluid px-4 ftco-to-top">
-				<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<span class="subheading">Events</span>
-            <h2 class="mb-5">Upcoming Events</h2>
-          </div>
-        </div>
-				<div class="row">
-					<!-- <div class="col-md-12 col-lg-6 col-xl-4">
-        		<div class="event-wrap d-flex ftco-animate">
-        			<div class="text p-4 d-flex align-items-center">
-        				<div>
-							<span class="time">Date: Sunday 20th & 27th September,2020</span>
-	        				<span class="time">Time: 8:00am - 11:00am</span>
-	        				<h3><a href="#">Gospel Week Of Operation Andrew</a></h3>
-	        				<div class="meta">
-		        				<p style="color: black;"><span class="icon-user mr-1"></span> Host:Rev. Dr & Pastor Mrs. Debbie Adeshina</p>
-		        				<p style="color: black;"><span class="icon-location"></span> Venue: 1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria</p>
-	        				</div>
-	        			</div>
-        			</div>
-        		</div>
-        	</div> -->
-        	<!-- <div class="col-md-12 col-lg-6 col-xl-4">
-        		<div class="event-wrap d-flex ftco-animate">
-        			<div class="text p-4 d-flex align-items-center">
-        				<div>
-							<span class="time">Date: Sunday 11th October, 2020</span>
-	        				<span class="time">Time: 8:00am - 11:00am</span>
-	        				<h3><a href="#">Women Conference / Anniversary</a></h3>
-	        				<div class="meta">
-		        				<p style="color: black;"><span class="icon-user mr-1"></span> Host: Rev. Dr & Pastor Mrs. Debbie Adeshina</p>
-		        				<p style="color: black;"><span class="icon-location"></span> Venue: 1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria</p>
-							</div>
-							</div>	        			
-        			</div>
-        		</div>
-        	</div>
-        	<div class="col-md-12 col-lg-6 col-xl-4">
-        		<div class="event-wrap d-flex ftco-animate">
-        			<div class="text p-4 d-flex align-items-center">
-        				<div>
-							<span class="time">Date: Saturday 24th October, 2020 </span>
-	        				<span class="time">Time: 5:00pm - 8:00pm</span>
-	        				<h3><a href="#">Refuge Ambassadors Night</a></h3>
-	        				<div class="meta">
-		        				<p style="color: black;"><span class="icon-user mr-1"></span> Host: Rev. Dr & Pastor Mrs. Debbie Adeshina</a></p>
-		        				<p style="color: black;"><span class="icon-location"></span> Venue: 1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria</p>
-	        				</div>
-	        			</div>
-        			</div>
-        		</div>
-        	</div> --> 
-
-		
-				<div class="col-md-12 col-lg-6 col-xl-4">
-			<div class="event-wrap d-flex ftco-animate">
-				<div class="text p-4 d-flex align-items-center">
-					<div>
-						<span class="time">Date: Friday 1<sup>st</sup> - Sunday 3<sup>rd</sup> April, 2022 </span><br>
-						<span class="time">Time: 6:00am (Fri & Sat.) Sun. 7:00am</span>
-						<br>
-
-						<h3><a href="#">2nd Quarter Open Womb Service: 3 Days of Sunrise Diverse Prayer Crusade  </a></h3>
-						<h3><a href="#">Theme: Step-up </a></h3>
-						<br>
-						<div class="meta">
-							<p style="color: black;"><span class="icon-user mr-1"></span> Host: Rev. Dr Favour & Pastor Mrs. Debbie Adeshina</a></p>
-							<br>
-							<p style="color: black;"><span class="icon-location"></span> Venue: 1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>      
-		<div class="col-md-6 col-lg-6 col-xl-4 ">
-			<div class="event-wrap d-flex ftco-animate">
-				<div class="text p-4 d-flex align-items-center">
-					<div>
-						<span class="time">Date: Sunday 3<sup>rd</sup> April, 2022 </span> <br>
-						<span class="time">Time: 7:00am - 11:30am</span>
-						<h3><a href="#">Superlative Combined Sunday Service: New Wine Experience </a></h3>
-						<h3><a href="#">Theme: Oil of Discreet</a></h3>	
-						<div class="meta h-100">
-							<p style="color: black;"><span class="icon-user mr-1"></span> Host: Rev. Dr Favour & Pastor Mrs. Debbie Adeshina</a></p>
-							<br><p style="color: black;"><span class="icon-location"></span> Venue: 1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-12 col-lg-6 col-xl-4">
-			<div class="event-wrap d-flex ftco-animate">
-				<div class="text p-4 d-flex align-items-center">
-					<div>
-						<span class="time">Date: Friday 8<sup>th </sup>April, 2022 </span></br>
-						<span class="time">Time: 11:00pm till dawn</span>
-						<br>
-
-						<h3><a href="#">Rehoboth Night Of Glory: Night Of God Answers Prayers </a></h3>
-						<h3><a href="#">Theme: Spiritual Warfare </a></h3>
-						<div class="meta">
-							<p style="color: black;"><span class="icon-user mr-1"></span> Host: Rev. Dr Favour & Pastor Mrs. Debbie Adeshina</a></p>
-							<br>
-							<p style="color: black;"><span class="icon-location"></span> Venue: 1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>      
-		<div class="col-md-12 col-lg-6 col-xl-4 h-100">
-			<div class="event-wrap d-flex ftco-animate">
-				<div class="text p-4 d-flex align-items-center">
-					<div >
-						<span class="time">Date: Wednesday 15<sup>th</sup> - Sunday 18<sup>th</sup> April, 2022 </span><br>
-						<br>
-						<span class="time">Time: 6:00pm & 7:00am </span>
-					
-
-					<h3><a href="#">Easter Programme: Calvary Dividend Crusade</a></h3>
-						<h3><a href="#">Theme: The Mystery of God </a></h3>
-						<div class="meta h-100">
-							<p style="color: black;"><span class="icon-user mr-1"></span> Host: Rev. Dr Favour & Pastor Mrs. Debbie Adeshina</a></p>
-							
-							<p style="color: black;"><span class="icon-location"></span> Venue: 1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-md-6 col-lg-6 col-xl-4 ">
-			<div class="event-wrap d-flex ftco-animate">
-				<div class="text p-4 d-flex align-items-center">
-					<div>
-						<span class="time">Date: Thursday 21<sup>st</sup> April, 2022 </span></br>
-						<span class="time">Time: 7:00pm</span>
-						<h3><a href="#"> Jehovah Rehoboth: Power Night of Settlement</a></h3>
-						<h3><a href="#">Theme: Father's Grace</a></h3>
-						<div class="meta h-100">
-							<p style="color: black"><span class="icon-user mr-1"></span> Host: Rev. Dr Favour & Pastor Mrs. Debbie Adeshina</a></p>
-							<br>
-							<p style="color: black;"><span class="icon-location"></span> Venue: 1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-12 col-lg-6 col-xl-4">
-			<div class="event-wrap d-flex ftco-animate">
-				<div class="text p-4 d-flex align-items-center">
-					<div>
-						<span class="time">Date: Friday 22<sup>nd</sup> & Saturday 23<sup>rd</sup> April, 2022 </span><br>
-						<span class="time">Time: 5:00pm & 10:00am</span>
-						<br>
-
-						<h3><a href="#">Pastoral Weekend Service: Pulpits and Pupils </a></h3>
-						<h3><a href="#">Theme: The Harvester</a></h3>
-						<div class="meta">
-							<p style="color: black;"><span class="icon-user mr-1"></span> Host: Rev. Dr Favour & Pastor Mrs. Debbie Adeshina</a></p>
-							<br>
-							<p style="color: black;"><span class="icon-location"></span> Venue: 1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>      
-	</div>
-	</div>
- 		</section>
-		<!-- <br>
-		<br> -->
-		<section class="ftco-daily-verse img " id="my-Btn" style="background-image: url(images/testimony.jpeg); width: 100%;">
-			<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row justify-content-center">
-    			<div class="col-md-10">
-		    		<div class="row justify-content-center align-items-center">
-		    			<div class="col-md-2 ftco-animate">
-		    				
-						</div>
-						
-						<br>
-						<br>
-		    			<div class="col-md-10 daily-verse pl-md-5 ftco-animate">
-							<h3>"Testimonies are proves of God's intervention in the affairs of men, and also inspires and builds others hope and trust in God. "</h3>
-		    				<span class="subheading">We will love to hear from you</span>
-		    				<h3>"Kindly Share Your Testimony With Us."</h3>
-		    			</div>
-						<button type="button" id="myBtn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >Share Your Testimony!</button>
-
-		    		</div>
-		    	</div>
-	    	</div>
-    	</div>
-    </section>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Testimony</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" id="modal">
-		<div class="alert">Your message has been sent</div>
-
-        <form id="testimonyForm">
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Name</label>
-            <input type="text" name="recipient-name" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <input type="text" class="form-control" name="message-text" id="message-text"></textarea>
-          </div>
-      </div>
-      <div class="modal-footer" id="modalFooter">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Send message</button>
-      </div>
-	</form>
     </div>
-  </div>
-</div>
 
-  
-    <section class="ftco-section bg-light text-center" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Inspirational Articles</span>
-            <h2 class="mb-4">Power For Living: Sunday School</h2>
-            <p>Grow in the knowledge of God by studying Gods word through Our Sunday Power For Living Articles </p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://refugegospelinternationalchurch.blogspot.com/" class="block-20" style="background-image: url('./images/cross.jpeg');">
-              </a>
-              <div class="text float-right d-block">
-              	<div class="d-flex align-items-center pt-2 mb-4 topp">
-              		<div class="one mr-2">
-              			<!-- <span class="day">28</span> -->
-              		</div>
-              		<div class="two">
-              			<!-- <span class="yr">2020</span> -->
-              			<!-- <span class="mos">June</span> -->
-              		</div>
-              	</div>
-                <h3 class="heading"><a href="https://refugegospelinternationalchurch.blogspot.com/">Salvation - The Benefit Of Salvation</a></h3>
-                <p>Know more about God's Salvation,by reading this inspiring article.</p>
-                <div class="d-flex align-items-center mt-4 meta">
-	                <p class="mb-0"><a href="https://refugegospelinternationalchurch.blogspot.com/" class="btn btn-outline-secondary" style="color: black;">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://refugegospelinternationalchurch.blogspot.com/" class="block-20" style="background-image: url('./images/bible.jpeg');">
-              </a>
-              <div class="text float-right d-block">
-              	<div class="d-flex align-items-center pt-2 mb-4 topp">
-              		<div class="one mr-2">
-              			<!-- <span class="day">29th</span> -->
-              		</div>
-              		<div class="two">
-              			<!-- <span class="yr">2020</span> -->
-              			<!-- <span class="mos">June</span> -->
-              		</div>
-              	</div>
-                <h3 class="heading"><a href="https://refugegospelinternationalchurch.blogspot.com/">The Holy Bible - The Bible Defined</a></h3>
-                <p>Know more about <b>The Bible - Manual for Life</b> by reading this article. </p>
-                <div class="d-flex align-items-center mt-4 meta">
-	                <p class="mb-0"><a href="https://refugegospelinternationalchurch.blogspot.com/#" class="btn btn-outline-secondary" style="color: black;">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://refugegospelinternationalchurch.blogspot.com/" class="block-20" style="background-image: url('./images/image_3.jpeg');">
-              </a>
-              <div class="text float-right d-block">
-              	<div class="d-flex align-items-center pt-2 mb-4 topp">
-              		<div class="one mr-2">
-              			<!-- <span class="day">19</span> -->
-              		</div>
-              		<div class="two">
-              			<!-- <span class="yr">2020</span> -->
-              			<!-- <span class="mos">September</span> -->
-              		</div>
-              	</div>
-                <h3 class="heading"><a href="https://refugegospelinternationalchurch.blogspot.com/">The Godhead (TRINITY)</a></h3>
-                <p>Jesus Christ is the second person in the Godhead.</p>
-                <div class="d-flex align-items-center mt-4 meta">
-	                <p class="mb-0"><a href="https://refugegospelinternationalchurch.blogspot.com/" class="btn btn-outline-secondary" style="color: black;">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-	  </div>
-	  <p class="mb-0"><a href="https://refugegospelinternationalchurch.blogspot.com/" class="btn btn-dark" style="color: white;">Click to view more articles <span class="ion-ios-arrow-round-forward"></span></a></p>
 
-    </section>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-        <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo"><span>Refuge Gospel International</span> Church</h2>
-			  <p><a href = "tel:+234 906 630 3733" target="blank" class="text-light">Call Us: +(234) 906 630 3733</a></p>
-			  <p>Connect with us on our social media platforms</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-				<li class="ftco-animate"><a href="https://twitter.com/RefugeGospel"><span class="bi bi-twitter"></span></a></li>
-				<li class="ftco-animate"><a href="https://web.facebook.com/THEATEROFSOLACE/"><span class="bi bi-facebook"></span></a></li>
-				<li class="ftco-animate"><a href="https://www.instagram.com/refuge_gospel/?hl=en"><span class="bi bi-instagram"></span></a></li>
-	
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">About</h2>
-              <ul class="list-unstyled">
-                <!-- <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Staff</a></li> -->
-                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Beliefs</a></li>
-                <!-- <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>History</a></li> -->
-                <li><a href="aboutUs.html" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Mission</a></li>
-                <!-- <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Wedding &amp; Funerals</a></li> -->
-                <!-- <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Jobs &amp; Internship</a></li> -->
-                <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Branches and Fellowships</a></li>
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/header-bgs/church logo 1.png" alt="Homepage">
+            </a>
+        </div>
 
-              </ul>
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a href="index.html" title="Home">Home</a></li>
+                <li><a href="#s-about" title="About">About</a></li>
+                <li><a href="#s-events" title="Services">Events</a></li>
+                <li><a href="#s-footer" title="Contact us">Contact</a></li>	
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+
+    <section class="s-hero-slider">
+        <div class="slick-carousel">
+            <div class="s-hero" data-parallax="scroll" data-image-src="./images/header-bgs/bg.jpeg" data-natural-width=450 data-natural-height=380 data-position-y=center>
+                <div class="hero-left-bar"></div>
+
+                <div class="row hero-content">
+        
+                    <div class="column large-full hero-content__text">
+                        <h1>
+                           Refuge  <br>
+                           Gospel <br>
+                            International Church inc.
+                        </h1>
+        
+                        <div class="hero-content__buttons">
+                            <a href="#s-events" class="btn btn--stroke">Upcoming Events</a>
+                            <a href="#s-about" class="btn btn--stroke">About Us</a>
+                        </div>
+                    </div> <!-- end hero-content__text -->
+        
+                </div> <!-- end hero-content -->
+        
+                <ul class="hero-social">
+                    <li class="hero-social__title">Follow Us</li>
+                    <li>
+                        <a href="#0" title="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#0" title="">YouTube</a>
+                    </li>
+                    <li>
+                        <a href="#0" title="">Instagram</a>
+                    </li>
+                </ul> <!-- end hero-social -->
+        
+                <div class="hero-scroll">
+                    <a href="#" class="scroll-link smoothscroll">
+                        Scroll For More
+                    </a>
+                </div> <!-- end hero-scroll -->
             </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Service Hours</h2>
-              <div class="opening-hours">
-				<p>Monday Bible Study: <span class="mb-3">5:30 pm to 7:00 pm</span></p>
-              	<p>Wednesday Prayer Meeting: <span class="mb-3">6:00 pm to 7:30 pm</span></p>
-				  <p>Sunday Service: <span class="mb-3">1st Service - 7:00am - 9:00am</span>
-					<span class="mb-3">2nd Service - 9:00 am - 11:00 am</span></p>
-					<p>Bi-Monthly All-Night Vigil : 2nd Friday<span class="mb-3">Time: 11:00pm</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Refuge Gospel International Church
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
-      </div>
-    </footer>
     
-  
+            <div class="s-hero" data-parallax="scroll" data-image-src="./images/header-bgs/light.jpeg" data-natural-width=450 data-natural-height=380 data-position-y=center>
+                <div class="hero-left-bar"></div>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+                <div class="row hero-content">
+        
+                    <div class="column large-full hero-content__text">
+                        <h1>
+                           Giving Solace to<br>
+                            Your Spirit, <br>
+                            Soul and Body
+                        </h1>
+        
+                        <div class="hero-content__buttons">
+                            <a href="#s-events" class="btn btn--stroke">Upcoming Events</a>
+                            <a href="#s-about" class="btn btn--stroke">About Us</a>
+                        </div>
+                    </div> <!-- end hero-content__text -->
+        
+                </div> <!-- end hero-content -->
+        
+                <ul class="hero-social">
+                    <li class="hero-social__title">Follow Us</li>
+                    <li>
+                        <a href="#0" title="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#0" title="">YouTube</a>
+                    </li>
+                    <li>
+                        <a href="#0" title="">Instagram</a>
+                    </li>
+                </ul> <!-- end hero-social -->
+        
+                <div class="hero-scroll">
+                    <a href="#" class="scroll-link smoothscroll">
+                        Scroll For More
+                    </a>
+                </div> <!-- end hero-scroll -->
+            </div>
+    
+            <!-- Add more slides as needed -->
+    
+        </div>
+    </section>
+    <!-- <section class="s-hero" data-parallax="scroll" data-image-src="./images/header-bgs/bg.jpeg" data-natural-width=450 data-natural-height=380 data-position-y=center>
 
-  
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="./js/popper.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/jquery.easing.1.3.js"></script>
-  <script src="./js/jquery.waypoints.min.js"></script>
-  <script src="./js/jquery.stellar.min.js"></script>
-  <script src="./js/owl.carousel.min.js"></script>
-  <script src="./js/jquery.magnific-popup.min.js"></script>
-  <script src="./js/aos.js"></script>
-  <script src="./js/jquery.animateNumber.min.js"></script>
-  <script src="./js/scrollax.min.js"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
-  <!-- <script src="js/google-map.js"></script> -->
-  <script src="./js/main.js"></script>
-  <script src="./js/modal.js"></script>
+        <div class="hero-left-bar"></div>
+
+        <div class="row hero-content">
+
+            <div class="column large-full hero-content__text">
+                <h1>
+                    We Exist To <br>
+                    Honor God And <br>
+                    Make Disciples
+                </h1>
+
+                <div class="hero-content__buttons">
+                    <a href="events.html" class="btn btn--stroke">Upcoming Events</a>
+                    <a href="about.html" class="btn btn--stroke">About Us</a>
+                </div>
+            </div> 
+
+        </div> 
+
+        <ul class="hero-social">
+            <li class="hero-social__title">Follow Us</li>
+            <li>
+                <a href="#0" title="">Facebook</a>
+            </li>
+            <li>
+                <a href="#0" title="">YouTube</a>
+            </li>
+            <li>
+                <a href="#0" title="">Instagram</a>
+            </li>
+        </ul> 
+
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+                Scroll For More
+            </a>
+        </div> 
+
+    </section>  -->
 
 
-	<script src= "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-  </body>
-</html>
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about" id="s-about">
+
+        <div class="row row-y-center about-content">
+
+            <div class="column large-half medium-full">
+                <h3 class="subhead">Welcome to  Refuge Gospel International Church <br>(Theatre Of Solace)</h3>
+                
+
+                <p class="lead">
+                    Experience the Safety of God, the love of a family and the joy of serving God!
+
+                </p>
+
+                <p class="lead">
+                    Welcome to Refuge Gospel International Church, giving solace to your Spirit, Soul and Body.
+                </p>
+                <p class="lead">
+
+                We are interested in your spiritual growth and maturity, through the undiluted word of God, and prayers.
+                 </p>
+
+                <a href="#" class="btn btn--primary btn--about">More About RGIC</a>
+            </div>
+
+            <div class="column large-half medium-full">
+                <ul class="about-sched">
+                    <li>
+                        <h4>Main Church Service</h4>
+                        <p>
+                        Sunday - 8:00 AM - 11:00 AM  <br>
+                        1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Bible Study</h4>
+                        <p>
+                        Monday - 6:00 PM - 7:30 PM  <br>
+                        1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Prayer Meeting</h4>
+                        <p>
+                        Wednesday - 6:00 PM - 7:30 PM <br>
+                        1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria
+                        </p>
+                    </li>
+                </ul> <!-- end about-sched-->
+            </div>
+
+        </div> <!-- end about-content -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- connect
+    ================================================== -->
+    <section class="s-connect">
+
+        <div class="row connect-content">
+            <div class="column large-half tab-full">
+                <h3 class="display-1">Share Your Testimony</h3>
+                <p>
+                    Testimonies are proves of God's intervention in the affairs of men, and also inspires and builds others hope and trust in God.
+                </p>
+                <p>
+                    We will love to hear from you
+                </p>
+                <p>
+                    Kindly Share Your Testimony With Us.
+                </p>
+
+
+                <a href="#" class="btn btn--primary h-full-width">Share Your Testimony</a>
+            </div>
+            <div class="column large-half tab-full">
+                <h3 class="display-1">Give Your Offering/Tithes and Seeds</h3>
+
+                <p>
+                    Let each one [give] as he has made up his own mind and purposed in his heart, not reluctantly or sorrowfully or under compulsion, for God loves (He [a]takes pleasure in, prizes above other things, and is unwilling to abandon or to do without) a cheerful (joyous, “prompt to do it”) giver [whose heart is in his giving].
+                    </p>
+
+                    <p>
+                       - 2nd Corinthians 9:7
+                        </p>
+
+                <a href="#" class="btn btn--primary h-full-width">Pay Your Offering/Seeds and Tithe</a>
+            </div>
+        </div> <!-- end connect-content  -->
+
+    </section> <!-- end s-connect -->
+
+
+    <!-- events
+    ================================================== -->
+    <section class="s-events" id="s-events">
+
+        <div class="row events-header">
+            <div class="column">
+                <h2 class="subhead">Upcoming Events.</h2>
+            </div>
+        </div> <!-- end event-header -->
+
+        <div class="row block-large-1-2 block-900-full events-list">
+
+            <div class="column events-list__item">
+                <h3 class="display-1 events-list__item-title">
+                    <a href="#0" title="">2023 Cross-Over Service.</a>
+                </h3>
+                <p>
+               Join Us as we thank God for 2023 and pray into the new year, in our New Year Eve/Cross Over Service. 
+                </p>
+                <ul class="events-list__meta">
+                    <li class="events-list__meta-date">Sunday, December 31, 2023</li>
+                    <li class="events-list__meta-time">8:00pm</li>
+                    <li class="events-list__meta-location">1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria
+                    </li>
+                </ul>
+            </div> <!-- end events-list__item -->
+            <div class="column events-list__item">
+                <h3 class="display-1 events-list__item-title">
+                    <a href="#0" title="">New Year Thanksgiving Service</a>
+                </h3>
+                <p>
+                Worship with us in the first sunday in 2024, as we praise and worship God for ushering us into the new year triumphantly.
+                </p>
+                <ul class="events-list__meta">
+                    <li class="events-list__meta-date">Sunday, January 7, 2023</li>
+                    <li class="events-list__meta-time">8:00AM - 11:00AM</li>
+                    <li class="events-list__meta-location">1 Ihunwo Street, Behind Woji Townhall, Woji, Port Harcourt, Rivers State, Nigeria</li>
+                </ul>
+            </div> <!-- end events-list__item -->
+            <!-- <div class="column events-list__item">
+                <h3 class="display-1 events-list__item-title">
+                    <a href="#0" title="">Youth Convergence.</a>
+                </h3>
+                <p>
+                Laborum distinctio minima doloribus reiciendis aut aliquid. 
+                Deleniti est adipisci ut quo ducimus eum ratione voluptas. 
+                Voluptatem tenetur rem ratione velit ut. Repudiandae atque 
+                perspiciatis est similique rerum nam qui iusto minus. Sapiente 
+                porro dolores consequatur optio animi aut facere.
+                </p>
+                <ul class="events-list__meta">
+                    <li class="events-list__meta-date">Friday, July 26, 2019</li>
+                    <li class="events-list__meta-time">5:00PM - 6:30PM</li>
+                    <li class="events-list__meta-location">1600 Amphitheatre Parkway, Mt. View</li>
+                </ul>
+            </div> 
+            <div class="column events-list__item">
+                <h3 class="display-1 events-list__item-title">
+                    <a href="#0" title="">Leadership Conference.</a>
+                </h3>
+                <p>
+                Optio temporibus suscipit magnam. Consequatur doloribus sed. 
+                Explicabo molestiae est minima. Distinctio quis optio architecto 
+                molestiae officia molestiae qui veniam minima. Nemo placeat ex 
+                dolor ratione qui autem eius vel. In dolorem aut enim aspernatur 
+                molestias nostrum.
+                </p>
+                <ul class="events-list__meta">
+                    <li class="events-list__meta-date">Sunday, July 28, 2019</li>
+                    <li class="events-list__meta-time">2:00PM - 5:30PM</li>
+                    <li class="events-list__meta-location">1600 Amphitheatre Parkway, Mt. View</li>
+                </ul>
+            </div>  -->
+
+        </div> <!-- end events-list -->
+
+    </section> <!-- end s-events -->
+
+
+    <!-- series
+    ================================================== -->
+    <section class="s-series">
+
+        <div class="series-img" style="background-image: url('images/messages.jpeg');"></div>
+
+        <div class="row row-y-center series-content">
+
+            <div class="column large-half medium-full">
+                <h3 class="subhead">Latest Sunday Service Message</h3>
+                <h2>Listen to Faith inspiring messages and teachings from our dear man of God.</h2>
+                <p>
+                Grow in faith and in the knowledge of God's word as you listen to these messages, your life will be transformed by the teaching of God's word.
+                </p>
+            </div> <!-- end column -->
+
+            <div class="column large-half medium-full">
+                <div class="series-content__buttons">
+                    <a href="" class="btn btn--large h-full-width">Connect to Our Live Service</a>
+                    <a href="" class="btn btn--large h-full-width">Watch the Recording</a>
+                </div>
+
+                <div class="series-content__subscribe">
+                    <p>
+                    Never miss a message. Subscribe to our Social Media Handles.
+                    </p>
+                    
+                    <ul class="series-content__subscribe-links">
+                        <li class="ss-apple-podcast"><a href="#0">Facebook</a></li>
+                        <li class="ss-youtube"><a href="#0">Youtube</a></li>
+                    </ul>
+                </div>
+            </div> <!-- end column -->
+            
+        </div> <!-- series-content -->
+
+    </section> <!-- end s-series -->
+
+
+    <!-- Social
+    ================================================== -->
+    <section class="s-social">
+            
+        <div class="row social-content">
+            <div class="column">
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--facebook"></span>
+                            <span class="social-list__text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--twitter"></span>
+                            <span class="social-list__text">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--instagram"></span>
+                            <span class="social-list__text">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--email"></span>
+                            <span class="social-list__text">Email</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- end social-content -->
+
+    </section> <!-- end s-social -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer" id="s-footer">
+
+        <div class="row footer-top">
+            <div class="column large-4 medium-5 tab-full">
+                <div class="footer-logo">
+                    <a class="site-footer-logo" href="index.html">
+                        <img src="images/header-bgs/church logo 1.png" alt="Homepage">
+                    </a>
+                </div>  <!-- footer-logo -->
+                <p>
+               Refuge Gospel International Church.<br> Giving Solace to your Spirit, Soul and Body.
+
+                </p>
+               
+            </div>
+            <div class="column large-half tab-full">
+                <div class="row">
+                    <div class="column large-7 medium-full">
+                        <h4 class="h6">Our Location</h4>
+                        <p>1 Ihunwo Street, Behind Woji Townhall,
+                            <br> Woji, Port Harcourt, 
+                            <br>Rivers State, Nigeria
+                       
+                        </p>
+        
+                        <p>
+                        <a href="https://maps.app.goo.gl/sQsVUBJ5NfC3N6yJ9" target="_blank" class="btn btn--footer">Get Direction</a>
+                        </p>
+                    </div>
+                    <div class="column large-5 medium-full">
+                        <h4 class="h6">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="events.html">Upcoming Events</a></li>
+                            <li><a href="contact.html">Prayer Of Salvation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end footer-top -->
+
+        <div class="row footer-bottom">
+            <div class="column ss-copyright">
+                <span>© Copyright <script>document.write(new Date().getFullYear());</script> All Rights Reserved</span> 
+                <span> <a href="https://www.refugegospelinternationalchurch.org">Refuge Gospel International Church</a></span>
+            </div>
+        </div> <!-- footer-bottom -->
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- ss-go-top -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="path/to/jquery.min.js"></script>
+<script src="path/to/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slick-carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 4000, // Adjust the speed as needed
+            arrows: false // Set to true if you want to show navigation arrows
+        });
+    });
+</script>
+
+</body>

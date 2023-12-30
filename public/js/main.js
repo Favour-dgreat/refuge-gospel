@@ -1,158 +1,149 @@
-AOS.init({
-    duration: 800,
-    easing: "slide"
-}), function(a) {
+/* ===================================================================
+ * Hesed 1.0.0 - Main JS
+ *
+ * ------------------------------------------------------------------- */
+
+(function($) {
+
     "use strict";
-    a(window).stellar({
-        responsive: !0,
-        parallaxBackgrounds: !0,
-        parallaxElements: !0,
-        horizontalScrolling: !1,
-        hideDistantElements: !1,
-        scrollProperty: "scroll"
-    });
-    var e = function() {
-        a(".js-fullheight").css("height", a(window).height()), a(window).resize(function() {
-            a(".js-fullheight").css("height", a(window).height());
+    
+    const cfg = {
+                scrollDuration : 800, // smoothscroll duration
+                mailChimpURL   : ''   // mailchimp url
+                };
+    const $WIN = $(window);
+
+    // Add the User Agent to the <html>
+    // will be used for IE10/IE11 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; rv:11.0))
+    const doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+
+
+   /* Preloader
+    * -------------------------------------------------- */
+    const ssPreloader = function() {
+
+        $("html").addClass('ss-preload');
+
+        $WIN.on('load', function() {
+
+            // force page scroll position to top at page refresh
+            // $('html, body').animate({ scrollTop: 0 }, 'normal');
+
+            // will first fade out the loading animation 
+            $("#loader").fadeOut("slow", function() {
+                // will fade out the whole DIV that covers the website.
+                $("#preloader").delay(300).fadeOut("slow");
+            }); 
+            
+            // for hero content animations 
+            $("html").removeClass('ss-preload');
+            $("html").addClass('ss-loaded');
+
         });
     };
-    e();
-    // loader
-    var n = function() {
-        setTimeout(function() {
-            a("#ftco-loader").length > 0 && a("#ftco-loader").removeClass("show");
-        }, 1);
-    };
-    n(), // Scrollax
-    a.Scrollax();
-    // Burger Menu
-    var t = function() {
-        a("body").on("click", ".js-fh5co-nav-toggle", function(e) {
-            e.preventDefault(), a("#ftco-nav").is(":visible") ? a(this).removeClass("active") : a(this).addClass("active");
+
+
+   /* Mobile Menu
+    * ---------------------------------------------------- */ 
+    const ssMobileMenu = function() {
+
+        const toggleButton = $('.header-menu-toggle');
+        const nav = $('.header-nav-wrap');
+
+        toggleButton.on('click', function(event){
+            event.preventDefault();
+
+            toggleButton.toggleClass('is-clicked');
+            nav.slideToggle();
         });
+
+        if (toggleButton.is(':visible')) nav.addClass('mobile');
+
+        $WIN.on('resize', function() {
+            if (toggleButton.is(':visible')) nav.addClass('mobile');
+            else nav.removeClass('mobile');
+        });
+
+        nav.find('a').on("click", function() {
+
+            if (nav.hasClass('mobile')) {
+                toggleButton.toggleClass('is-clicked');
+                nav.slideToggle(); 
+            }
+        });
+
     };
-    t();
-    var o = function() {
-        a(document).on("click", '#ftco-nav a[href^="#"]', function(e) {
+
+
+   /* Alert Boxes
+    * ------------------------------------------------------ */
+    const ssAlertBoxes = function() {
+
+        $('.alert-box').on('click', '.alert-box__close', function() {
+            $(this).parent().fadeOut(500);
+        }); 
+
+    };
+
+    
+   /* Smooth Scrolling
+    * ------------------------------------------------------ */
+    const ssSmoothScroll = function() {
+        
+        $('.smoothscroll').on('click', function (e) {
+            const target = this.hash;
+            const $target = $(target);
+            
             e.preventDefault();
-            a.attr(this, "href");
-            a("html, body").animate({
-                scrollTop: a(a.attr(this, "href")).offset().top - 70
-            }, 500, function() {});
-        });
-    };
-    o();
-    var s = function() {
-        a(".carousel slide").owlCarousel({
-            loop: !0,
-            autoplay: !0,
-            margin: 0,
-            animateOut: "fadeOut",
-            animateIn: "fadeIn",
-            nav: !1,
-            autoplayHoverPause: !1,
-            items: 1,
-            navText: [ "<span class='ion-md-arrow-back'></span>", "<span class='ion-chevron-right'></span>" ],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1e3: {
-                    items: 1
+            e.stopPropagation();
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, cfg.scrollDuration, 'swing').promise().done(function () {
+
+                // check if menu is open
+                if ($('body').hasClass('menu-is-open')) {
+                    $('.header-menu-toggle').trigger('click');
                 }
+
+                window.location.hash = target;
+            });
+        });
+
+    };
+
+
+   /* Back to Top
+    * ------------------------------------------------------ */
+    const ssBackToTop = function() {
+        
+        const pxShow      = 500;
+        const $goTopButton = $(".ss-go-top")
+
+        // Show or hide the button
+        if ($(window).scrollTop() >= pxShow) $goTopButton.addClass('link-is-visible');
+
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() >= pxShow) {
+                if(!$goTopButton.hasClass('link-is-visible')) $goTopButton.addClass('link-is-visible')
+            } else {
+                $goTopButton.removeClass('link-is-visible')
             }
         });
     };
-    s(), a("nav .dropdown").hover(function() {
-        var e = a(this);
-        // 	 timer;
-        // clearTimeout(timer);
-        e.addClass("show"), e.find("> a").attr("aria-expanded", !0), // $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
-        e.find(".dropdown-menu").addClass("show");
-    }, function() {
-        var e = a(this);
-        // timer;
-        // timer = setTimeout(function(){
-        e.removeClass("show"), e.find("> a").attr("aria-expanded", !1), // $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
-        e.find(".dropdown-menu").removeClass("show");
-    }), a("#dropdown04").on("show.bs.dropdown", function() {
-        console.log("show");
-    });
-    // scroll
-    var i = function() {
-        a(window).scroll(function() {
-            var e = a(this), n = e.scrollTop(), t = a(".ftco_navbar"), o = a(".js-scroll-wrap");
-            n > 150 && (t.hasClass("scrolled") || t.addClass("scrolled")), 150 > n && t.hasClass("scrolled") && t.removeClass("scrolled sleep"), 
-            n > 350 && (t.hasClass("awake") || t.addClass("awake"), o.length > 0 && o.addClass("sleep")), 
-            350 > n && (t.hasClass("awake") && (t.removeClass("awake"), t.addClass("sleep")), 
-            o.length > 0 && o.removeClass("sleep"));
-        });
-    };
-    i();
-    var l = function() {
-        a("#section-counter, .hero-wrap, .ftco-counter, .ftco-causes").waypoint(function(e) {
-            if ("down" === e && !a(this.element).hasClass("ftco-animated")) {
-                var n = a.animateNumber.numberStepFactories.separator(",");
-                a(".number").each(function() {
-                    var e = a(this), t = e.data("number");
-                    console.log(t), e.animateNumber({
-                        number: t,
-                        numberStep: n
-                    }, 7e3);
-                });
-            }
-        }, {
-            offset: "95%"
-        });
-    };
-    l();
-    var r = function() {
-        var e = 0;
-        a(".ftco-animate").waypoint(function(n) {
-            "down" !== n || a(this.element).hasClass("ftco-animated") || (e++, a(this.element).addClass("item-animate"), 
-            setTimeout(function() {
-                a("body .ftco-animate.item-animate").each(function(e) {
-                    var n = a(this);
-                    setTimeout(function() {
-                        var a = n.data("animate-effect");
-                        "fadeIn" === a ? n.addClass("fadeIn ftco-animated") : "fadeInLeft" === a ? n.addClass("fadeInLeft ftco-animated") : "fadeInRight" === a ? n.addClass("fadeInRight ftco-animated") : n.addClass("fadeInUp ftco-animated"), 
-                        n.removeClass("item-animate");
-                    }, 50 * e, "easeInOutExpo");
-                });
-            }, 100));
-        }, {
-            offset: "95%"
-        });
-    };
-    r(), // magnific popup
-    a(".image-popup").magnificPopup({
-        type: "image",
-        closeOnContentClick: !0,
-        closeBtnInside: !1,
-        fixedContentPos: !0,
-        mainClass: "mfp-no-margins mfp-with-zoom",
-        // class to remove default margin from left and right side
-        gallery: {
-            enabled: !0,
-            navigateByImgClick: !0,
-            preload: [ 0, 1 ]
-        },
-        image: {
-            verticalFit: !0
-        },
-        zoom: {
-            enabled: !0,
-            duration: 300
-        }
-    }), a(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
-        disableOn: 700,
-        type: "iframe",
-        mainClass: "mfp-fade",
-        removalDelay: 160,
-        preloader: !1,
-        fixedContentPos: !1
-    });
-}(jQuery);
+
+
+   /* Initialize
+    * ------------------------------------------------------ */
+    (function ssInit() {
+
+        ssPreloader();
+        ssMobileMenu();
+        ssAlertBoxes();
+        ssSmoothScroll();
+        ssBackToTop();
+
+    })();
+
+})(jQuery);
