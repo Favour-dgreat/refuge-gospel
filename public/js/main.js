@@ -131,6 +131,40 @@
                 $goTopButton.removeClass('link-is-visible')
             }
         });
+        // Get modal and buttons
+const modal = document.getElementById("paymentModal");
+const openModalBtn = document.getElementById("openModal");
+const closeModalBtn = document.getElementById("closeModal");
+const whatsappButton = document.getElementById("whatsappButton");
+
+// Open modal
+openModalBtn.addEventListener("click", (event) => {
+  event.preventDefault(); // Prevent default anchor behavior
+  modal.style.display = "block";
+});
+
+// Close modal
+closeModalBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+whatsappButton.addEventListener("click", () => {
+  const whatsappNumber = "+2347037543091";
+  const message = encodeURIComponent(
+    "Hello, I have made a payment. Please confirm. Thank you!"
+  );
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+  window.open(whatsappUrl, "_blank"); // Open WhatsApp in a new tab
+  modal.style.display = "none"; // Close modal
+});
+
+// Close modal if clicked outside the content
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
     };
 
 
