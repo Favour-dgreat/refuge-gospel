@@ -1,0 +1,28 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import Home from './pages/public/Home';
+
+import Login from './pages/admin/Login';
+import Dashboard from './pages/admin/Dashboard';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* Public Routes - Wrapped in Layout */}
+        <Route path="/" element={
+          <Layout>
+            <Home />
+          </Layout>
+        } />
+
+        {/* Admin Routes - No Layout or different layout */}
+        <Route path="/admin/login" element={<Login />} />
+        <Route path="/admin" element={<Login />} />
+        <Route path="/admin/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
+  )
+}
+
+export default App

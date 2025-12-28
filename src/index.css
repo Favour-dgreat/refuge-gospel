@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased text-gray-900 bg-white;
+  }
+}
+
+@theme {
+  --color-primary: #422341;
+  --color-secondary: #633562;
+  --color-accent: #422341;
+}
