@@ -392,6 +392,33 @@ const Home = () => {
                             >
                                 Get Directions
                             </a>
+
+                            <div className="mt-20 w-full max-w-6xl mx-auto">
+                                <h3 className="text-4xl md:text-5xl font-bold text-white mb-10 tracking-tighter">Satellite Churches</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+                                    {[
+                                        "Nihi Etche",
+                                        "Odufor Etche",
+                                        "Afara Etche",
+                                        "Ulakwo Etche",
+                                        "Akwa Etche",
+                                        "Odagwa Etche"
+                                    ].map((location, index) => (
+                                        <div key={index} className="flex items-center gap-4 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 group cursor-default">
+                                            <div className="p-3 rounded-full bg-white/10 group-hover:bg-[#FFB86C] transition-colors">
+                                                <MapPin className="text-[#FFB86C] group-hover:text-white w-6 h-6 transition-colors" />
+                                            </div>
+                                            <div>
+                                                <p className="text-white font-bold text-xl leading-tight">{location}</p>
+                                                <p className="text-white/50 text-xs uppercase tracking-widest mt-1">Rivers State</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+
+
                         </div>
 
                         {/* Service Times Footer */}

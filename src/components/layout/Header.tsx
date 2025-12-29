@@ -18,10 +18,11 @@ const Header = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
         { name: 'Livestream', path: '/#livestream' },
+        { name: 'Who We Are', path: '/who-we-are' },
+        { name: 'Ministries', path: '/ministries' },
+        { name: 'Governance', path: '/governance' },
         { name: 'Give', path: '/#give' },
-        { name: 'The Church', path: '/#church' },
         { name: 'Store', path: '/#store' },
-        { name: 'Ministries', path: '/#ministries' },
         { name: 'Resources', path: '/#resources' },
         { name: 'Contact', path: '/#contact' },
     ];

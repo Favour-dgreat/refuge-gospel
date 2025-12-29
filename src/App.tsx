@@ -5,6 +5,10 @@ import Home from './pages/public/Home';
 import Login from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
 
+import WhoWeAre from './pages/public/WhoWeAre';
+import Ministries from './pages/public/Ministries';
+import Governance from './pages/public/Governance';
+
 function App() {
   return (
     <Router>
@@ -13,6 +17,21 @@ function App() {
         <Route path="/" element={
           <Layout>
             <Home />
+          </Layout>
+        } />
+        <Route path="/who-we-are" element={
+          <Layout>
+            <WhoWeAre />
+          </Layout>
+        } />
+        <Route path="/ministries" element={
+          <Layout>
+            <Ministries />
+          </Layout>
+        } />
+        <Route path="/governance" element={
+          <Layout>
+            <Governance />
           </Layout>
         } />
 
