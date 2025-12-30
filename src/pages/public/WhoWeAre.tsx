@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
-
+import bg from "../../assets/images/4.jpg"
 const WhoWeAre = () => {
     return (
-        <div className="bg-white min-h-screen pt-20">
+        <div className="bg-black min-h-screen pt-20 overflow-hidden">
             {/* Hero Section */}
             <section className="relative h-[60vh] flex items-center justify-center bg-black overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black z-10" />
                 <div
-                    className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1548625361-e88c60eb83fe?q=80&w=2671&auto=format&fit=crop')] bg-cover bg-center opacity-50"
+                    className="absolute inset-0 bg-cover bg-center opacity-50"
+                    style={{ backgroundImage: `url(${bg})` }}
                 />
                 <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
                     <motion.h1
@@ -30,20 +31,20 @@ const WhoWeAre = () => {
             </section>
 
             {/* Profile Section */}
-            <section className="py-24 px-4 container mx-auto">
+            <section className="bg-white py-24 px-4 container mx-auto">
                 <div className="max-w-4xl mx-auto space-y-8 text-center">
                     <span className="text-accent font-bold uppercase tracking-widest text-sm">Our Profile</span>
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Refuge Gospel International Church Inc.</h2>
-                    <div className="prose prose-lg mx-auto text-gray-600 text-left md:text-center leading-relaxed">
+                    <div className="prose prose-lg mx-auto text-2xl text-gray-600 text-left md:text-center leading-relaxed">
                         <p>
                             Refuge Gospel Family is a church of all race, Colour and Class.
                             The Church is revolves in global discipleship, Missions Work and Charitable Sources aimed at humanity, peace for Kingdom growth: this is our Divine Commission and Mandate.
                         </p>
                         <p>
-                            We preach Refuge Gospel Household to the Oppressed, bondsmen, the afflicted and the destitute man in his/her State Of predicament to be saved, delivered, empowered, established to have Christ whole solace of the spirit, Soul and body (Matt. 11: 28 - 30, ISa.42: 5 - 12).
+                            We preach Refuge Gospel Household to the oppressed, bondsmen, the afflicted and the destitute man in his/her State Of predicament to be saved, delivered, empowered, established to have Christ whole solace of the spirit, Soul and body (Matthew 11:28-30, Isaiah 42:5-12).
                         </p>
                         <p>
-                            We are out to establish, Maintain and Operate Subsidiary and Charitable Social Service a Such as institutions, Schools, Hospitals, liberals, employment centres, departmental Stores, and Social welfare centers / Schemes to aid the Fulfillment of our Commission and Mandate.
+                            We are out to establish, maintain and operate subsidiary and charitable social service such as institutions, Schools, Hospitals, liberals, employment centres, departmental stores, and social welfare centers / schemes to aid the Fulfillment of our Commission and Mandate.
                         </p>
                     </div>
                 </div>
@@ -108,33 +109,33 @@ const WhoWeAre = () => {
                             <div>
                                 <h4 className="text-xl font-bold mb-2 text-white/90 uppercase tracking-widest">Core Purpose</h4>
                                 <p className="text-3xl font-bold">To Give Christ Solace to the destituted</p>
-                                <p className="text-white/60 font-mono mt-1">Acts 5: 16, Jn 5: 2-3</p>
+                                <p className="text-white/60 font-mono mt-1">Acts 5: 16, John 5: 2-3</p>
                             </div>
                             <div>
                                 <h4 className="text-xl font-bold mb-2 text-white/90 uppercase tracking-widest">Liberation</h4>
                                 <p className="text-3xl font-bold">Freedom for the Oppressed</p>
-                                <p className="text-white/60 font-mono mt-1">LK 8: 26-35</p>
+                                <p className="text-white/60 font-mono mt-1">Luke 8: 26-35</p>
                             </div>
                             <div>
                                 <h4 className="text-xl font-bold mb-2 text-white/90 uppercase tracking-widest">Abundance</h4>
                                 <p className="text-3xl font-bold">Prosperity for the Bonded</p>
-                                <p className="text-white/60 font-mono mt-1">1 Chro.4: 9-10, Lk 5:1-7</p>
+                                <p className="text-white/60 font-mono mt-1">1 Chronicles 4: 9-10, Luke 5:1-7</p>
                             </div>
                         </div>
                         <div className="space-y-8">
                             <div>
                                 <h4 className="text-xl font-bold mb-2 text-white/90 uppercase tracking-widest">Healing</h4>
                                 <p className="text-3xl font-bold">Restoration to the afflicted</p>
-                                <p className="text-white/60 font-mono mt-1">Jn 5:5-9, Lk 4: 38-41</p>
+                                <p className="text-white/60 font-mono mt-1">John 5:5-9, Luke 4: 38-41</p>
                             </div>
                             <div>
                                 <h4 className="text-xl font-bold mb-2 text-white/90 uppercase tracking-widest">Victory</h4>
                                 <p className="text-3xl font-bold">Victorious Life against the state of unpredicament</p>
-                                <p className="text-white/60 font-mono mt-1">Lk 8:35, Acts 18:24-28</p>
+                                <p className="text-white/60 font-mono mt-1">Luke 8:35, Acts 18:24-28</p>
                             </div>
                             <div>
                                 <h4 className="text-xl font-bold mb-2 text-white/90 uppercase tracking-widest">Leadership</h4>
-                                <p className="text-3xl font-bold">Leadership hulbs for a center stage of greatness, a Citadel of development and fulfilment.</p>
+                                <p className="text-3xl font-bold">Leadership hubs for a center stage of greatness, a Citadel of development and fulfilment.</p>
                             </div>
                         </div>
                     </div>

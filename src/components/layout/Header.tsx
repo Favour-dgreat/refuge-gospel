@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Facebook, Instagram } from 'lucide-react';
+import { Menu, X, Facebook, Instagram, Twitter } from 'lucide-react';
 import logo from '../../assets/images/logo.png';
 
 const Header = () => {
@@ -17,14 +17,10 @@ const Header = () => {
 
     const navLinks = [
         { name: 'Home', path: '/' },
-        { name: 'Livestream', path: '/#livestream' },
         { name: 'Who We Are', path: '/who-we-are' },
         { name: 'Ministries', path: '/ministries' },
         { name: 'Governance', path: '/governance' },
-        { name: 'Give', path: '/#give' },
-        { name: 'Store', path: '/#store' },
-        { name: 'Resources', path: '/#resources' },
-        { name: 'Contact', path: '/#contact' },
+        { name: 'Contact', path: '/contact' },
     ];
 
     return (
@@ -52,11 +48,14 @@ const Header = () => {
                     </ul>
                     {/* Social Icons */}
                     <div className="flex items-center space-x-4 border-l border-white/20 pl-6">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                        <a href="https://web.facebook.com/THEATEROFSOLACE" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                             <Facebook size={18} />
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                        <a href="https://www.instagram.com/refugegospel/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                             <Instagram size={18} />
+                        </a>
+                         <a href="https://x.com/RefugeGospel" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                            <Twitter size={18} />
                         </a>
                     </div>
                 </nav>

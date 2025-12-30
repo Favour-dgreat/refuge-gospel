@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import logo from '../../assets/images/logo.png';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
@@ -12,7 +12,7 @@ const Footer = () => {
                     <div>
                         <div className="mb-4">
                             {/* Placeholder for logo */}
-                            <span className="text-2xl font-bold text-white tracking-widest">RGIC</span>
+                            <img src={logo} alt="RGIC Logo" className="h-20 w-auto inline-block mr-3" />
                         </div>
                         <p className="leading-relaxed text-sm">
                             Refuge Gospel International Church.<br />

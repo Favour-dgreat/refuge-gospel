@@ -8,6 +8,7 @@ import Dashboard from './pages/admin/Dashboard';
 import WhoWeAre from './pages/public/WhoWeAre';
 import Ministries from './pages/public/Ministries';
 import Governance from './pages/public/Governance';
+import Contact from './pages/public/Contact';
 
 function App() {
   return (
@@ -32,6 +33,11 @@ function App() {
         <Route path="/governance" element={
           <Layout>
             <Governance />
+          </Layout>
+        } />
+        <Route path="/contact" element={
+          <Layout>
+            <Contact />
           </Layout>
         } />
 

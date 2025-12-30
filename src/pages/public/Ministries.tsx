@@ -32,7 +32,7 @@ const Ministries = () => {
     };
 
     return (
-        <div className="bg-gray-50 min-h-screen pt-20">
+        <div className="bg-black min-h-screen pt-24 overflow-hidd">
             {/* Header */}
             <section className="bg-accent text-white py-24 px-4 text-center">
                 <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Ministries & Departments</h1>
