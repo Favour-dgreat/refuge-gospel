@@ -97,7 +97,7 @@ const Ministries = () => {
                         >
                             {data.fellowships.map((item, idx) => (
                                 <div key={idx} className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all border border-gray-100 group">
-                                    <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                    <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center text-accent mb-6 group-hover:bg-accent group-hover:text-white transition-colors">
                                         <Heart size={24} />
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-800 mb-2">{item.name}</h3>

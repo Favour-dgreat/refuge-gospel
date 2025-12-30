@@ -431,7 +431,17 @@ const Home = () => {
                                         </div>
                                         <h4 className="text-xl font-bold uppercase tracking-wider">Sunday Service</h4>
                                     </div>
-                                    <p className="text-2xl md:text-3xl font-light text-white">8:30am <span className="text-white/40 mx-2">-</span> 11:00am</p>
+                                    <p className="text-2xl md:text-3xl font-light text-white">8:00am <span className="text-white/40 mx-2">-</span> 11:00am</p>
+                                    <p className="text-sm text-white/60 font-mono uppercase tracking-widest">GMT +1</p>
+                                </div>
+                                 <div className="space-y-3">
+                                    <div className="flex items-center justify-center gap-3 text-[#FFB86C]">
+                                        <div className="p-2 bg-white/10 rounded-full">
+                                            <Calendar className="w-6 h-6" />
+                                        </div>
+                                        <h4 className="text-xl font-bold uppercase tracking-wider">Monday Bible Study Service</h4>
+                                    </div>
+                                    <p className="text-2xl md:text-3xl font-light text-white">6:00pm <span className="text-white/40 mx-2">-</span> 11:00am</p>
                                     <p className="text-sm text-white/60 font-mono uppercase tracking-widest">GMT +1</p>
                                 </div>
 
@@ -440,7 +450,7 @@ const Home = () => {
                                         <div className="p-2 bg-white/10 rounded-full">
                                             <Clock className="w-6 h-6" />
                                         </div>
-                                        <h4 className="text-xl font-bold uppercase tracking-wider">Wednesday Service</h4>
+                                        <h4 className="text-xl font-bold uppercase tracking-wider">Wednesday Prayer Service</h4>
                                     </div>
                                     <p className="text-2xl md:text-3xl font-light text-white">6:00pm</p>
                                     <p className="text-sm text-white/60 font-mono uppercase tracking-widest">GMT +1</p>
