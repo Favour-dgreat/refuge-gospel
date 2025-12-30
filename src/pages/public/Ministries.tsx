@@ -24,7 +24,7 @@ const Ministries = () => {
             "Media & Publicity", "Land & Housing", "Transport & Maintenance", "Safety & Security",
             "Technical, Electrical & Electronics", "Special Duties", "Welfare & Hospitality Duties",
             "Married & Family Life", "Women Affairs", "Church Education & Growth", "Worship & Music",
-            "Evangelism & Fellow - Up", "Intercessory Tower", "Outreach & Mission", "Usher & Ushering",
+            "Evangelism & Follow - Up", "Intercessory Tower", "Outreach & Mission", "Usher & Ushering",
             "Sanctuary, Beautifiers & Decoration", "Protocol & Information", "Leadership & Management",
             "Research & Development", "Sports & Social Affairs", "Pastors Care & Welfare",
             "Alter & Clerical Affairs", "Office Administration & Ministerial"
