@@ -28,7 +28,7 @@ const Header = () => {
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <div className="flex-shrink-0">
                     <Link to="/" className="text-2xl font-bold text-white uppercase tracking-wider">
-                        <img src={logo} alt="RGIC Logo" className="h-24" />
+                        <img src={logo} alt="RGIC Logo" className="h-16 md:h-24" />
                     </Link>
                 </div>
 
@@ -54,7 +54,7 @@ const Header = () => {
                         <a href="https://www.instagram.com/refugegospel/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                             <Instagram size={18} />
                         </a>
-                         <a href="https://x.com/RefugeGospel" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                        <a href="https://x.com/RefugeGospel" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                             <Twitter size={18} />
                         </a>
                     </div>
@@ -84,6 +84,17 @@ const Header = () => {
                                 </li>
                             ))}
                         </ul>
+                        <div className="flex items-center space-x-6 mt-8 border-t border-white/10 pt-6">
+                            <a href="https://web.facebook.com/THEATEROFSOLACE" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                                <Facebook size={24} />
+                            </a>
+                            <a href="https://www.instagram.com/refugegospel/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                                <Instagram size={24} />
+                            </a>
+                            <a href="https://x.com/RefugeGospel" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                                <Twitter size={24} />
+                            </a>
+                        </div>
                     </div>
                 )}
             </div>

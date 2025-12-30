@@ -1,10 +1,10 @@
 
 const Governance = () => {
     return (
-        <div className="bg-black min-h-screen pt-25 overflow-hidd">
-            <section className="bg-white text-dark py-24 px-4 text-center">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6 font-serif">Governance & Leadership</h1>
-                <p className="text-xl text-dark/60 max-w-2xl mx-auto">
+        <div className="bg-black min-h-screen pt-24 overflow-hidden">
+            <section className="bg-white text-gray-900 py-24 px-4 text-center">
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 font-serif">Governance & Leadership</h1>
+                <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                     The structure and leadership bodies that guide Refuge Gospel International Church.
                 </p>
             </section>
@@ -34,9 +34,9 @@ const Governance = () => {
                                 "Office of The District Pastor",
                                 "Office of The Resident Pastor"
                             ].map((office, i) => (
-                                <div key={i} className="flex items-center gap-6 p-4 border-b border-gray-100 ">
+                                <div key={i} className="flex items-center gap-6 p-4 border-b border-gray-100/10 ">
                                     <span className="text-gray-300 font-bold text-2xl font-serif">{(i + 1).toString().padStart(2, '0')}</span>
-                                    <h3 className="text-lg font-bold text-white hover:text-dark">{office}</h3>
+                                    <h3 className="text-lg font-bold text-white hover:text-accent transition-colors">{office}</h3>
                                 </div>
                             ))}
                         </div>

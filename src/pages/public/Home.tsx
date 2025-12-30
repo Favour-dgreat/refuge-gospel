@@ -98,7 +98,7 @@ const Home = () => {
                 {/* Overlay Content */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
                     <h2 className="text-3xl md:text-5xl font-medium text-white mb-2 drop-shadow-lg">Welcome to</h2>
-                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg leading-tight">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 drop-shadow-lg leading-tight">
                         Refuge Gospel <br /> International Church
                     </h1>
                     <p className="text-xl md:text-3xl text-white/90 mb-10 font-light drop-shadow-md">(Theatre of Solace)</p>
@@ -136,7 +136,7 @@ const Home = () => {
                         <div className="space-y-8">
                             <div className="space-y-4">
                                 <h3 className="text-accent text-sm font-bold uppercase tracking-[0.2em]">The Mandate</h3>
-                                <h2 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                                <h2 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
                                     Giving Solace  <br />
                                     to Spirit, Soul <br />
                                     & Body.
@@ -172,7 +172,7 @@ const Home = () => {
 
                     <div className="grid md:grid-cols-4 gap-6">
                         {/* Card 1 */}
-                        <div className="group relative h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-xl">
+                        <div className="group relative h-[300px] md:h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-xl">
                             <img src={img4} alt="Learn" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
                             <div className="absolute top-6 left-6">
@@ -184,7 +184,7 @@ const Home = () => {
                         </div>
 
                         {/* Card 2 */}
-                        <div className="group relative h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-xl">
+                        <div className="group relative h-[300px] md:h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-xl">
                             <img src={img10} alt="Worship" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
                             <div className="absolute top-6 left-6">
@@ -196,7 +196,7 @@ const Home = () => {
                         </div>
 
                         {/* Card 3 */}
-                        <div className="group relative h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-xl">
+                        <div className="group relative h-[300px] md:h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-xl">
                             <img src={img6} alt="Get Involved" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 bg-purple-900/40 " />
                             <div className="absolute top-6 left-6">
@@ -208,7 +208,7 @@ const Home = () => {
                         </div>
 
                         {/* Card 4 */}
-                        <div className="group relative h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-xl">
+                        <div className="group relative h-[300px] md:h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-xl">
                             <img src={img9} alt="Give" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
                             <div className="absolute top-6 left-6">
@@ -227,9 +227,9 @@ const Home = () => {
                 <div className="container mx-auto px-4">
                     {/* WATCHWORD SECTION */}
                     <div className="mb-20">
-                        <div className="bg-gray-50 rounded-[40px] p-12 md:p-16 text-center border border-gray-100 shadow-sm max-w-5xl mx-auto">
-                            <span className="text-accent font-bold uppercase tracking-[0.2em] mb-4 block">2026 Watchword</span>
-                            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 font-serif">Our Year of Being On Eagle's Wings</h2>
+                        <div className="bg-gray-50 rounded-[30px] md:rounded-[40px] p-8 md:p-16 text-center border border-gray-100 shadow-sm max-w-5xl mx-auto">
+                            <span className="text-accent font-bold uppercase tracking-[0.2em] mb-4 block text-sm md:text-base">2026 Watchword</span>
+                            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 font-serif">Our Year of Being On Eagle's Wings</h2>
 
                             <div className="relative max-w-3xl mx-auto">
                                 <span className="text-9xl text-accent/10 absolute -top-10 -left-10 font-serif leading-none">"</span>
@@ -293,13 +293,13 @@ const Home = () => {
             {/* PASTOR SECTION */}
             <section className="py-4">
                 <div className="w-full">
-                    <div className="bg-accent rounded-[50px] p-12 md:p-24 text-white">
+                    <div className="bg-accent rounded-[30px] md:rounded-[50px] p-8 md:p-24 text-white">
                         <div className="grid md:grid-cols-2 gap-16 items-center">
                             {/* Left Content */}
                             <div className="space-y-8">
                                 <div>
-                                    <h2 className="text-5xl md:text-6xl font-bold mb-2">Bishop Favour Adekunle Adeshina (Snr)</h2>
-                                    <p className="text-2xl text-white/80 font-medium">Presiding Bishop</p>
+                                    <h2 className="text-4xl md:text-6xl font-bold mb-2">Bishop Favour Adekunle Adeshina (Snr)</h2>
+                                    <p className="text-xl md:text-2xl text-white/80 font-medium">Presiding Bishop</p>
                                 </div>
 
                                 <p className="text-xl text-white/90 leading-relaxed font-light">
@@ -308,7 +308,7 @@ const Home = () => {
                                     He is married, and together, they have a thriving, glorious family.
                                 </p>
 
-                                <h3 className="text-4xl md:text-5xl font-bold font-serif italic mt-8">You will love it here!</h3>
+                                <h3 className="text-3xl md:text-5xl font-bold font-serif italic mt-8">You will love it here!</h3>
                             </div>
 
                             {/* Right Image/Video */}
@@ -376,7 +376,7 @@ const Home = () => {
                         {/* Main Content */}
                         <div className="relative z-10 max-w-5xl mx-auto space-y-8 px-4">
                             <div className="space-y-4">
-                                <h2 className="text-6xl md:text-8xl font-bold text-white tracking-tighter leading-none">
+                                <h2 className="text-5xl md:text-8xl font-bold text-white tracking-tighter leading-none">
                                     See You In<br />Service
                                 </h2>
                                 <p className="text-xl md:text-3xl text-white/90 font-medium max-w-2xl mx-auto">

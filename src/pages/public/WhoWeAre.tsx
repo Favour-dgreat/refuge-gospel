@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import bg from "../../assets/images/4.jpg"
 const WhoWeAre = () => {
     return (
-        <div className="bg-black min-h-screen pt-20 overflow-hidden">
+        <div className="bg-black min-h-screen pt-24 overflow-hidden">
             {/* Hero Section */}
             <section className="relative h-[60vh] flex items-center justify-center bg-black overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black z-10" />
@@ -15,7 +15,7 @@ const WhoWeAre = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tighter"
+                        className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tighter"
                     >
                         Who We Are
                     </motion.h1>
@@ -34,8 +34,8 @@ const WhoWeAre = () => {
             <section className="bg-white py-24 px-4 container mx-auto">
                 <div className="max-w-4xl mx-auto space-y-8 text-center">
                     <span className="text-accent font-bold uppercase tracking-widest text-sm">Our Profile</span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Refuge Gospel International Church Inc.</h2>
-                    <div className="prose prose-lg mx-auto text-2xl text-gray-600 text-left md:text-center leading-relaxed">
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">Refuge Gospel International Church Inc.</h2>
+                    <div className="prose prose-lg mx-auto text-lg md:text-xl lg:text-2xl text-gray-600 text-left md:text-center leading-relaxed">
                         <p>
                             Refuge Gospel Family is a church of all race, Colour and Class.
                             The Church is revolves in global discipleship, Missions Work and Charitable Sources aimed at humanity, peace for Kingdom growth: this is our Divine Commission and Mandate.
@@ -103,7 +103,7 @@ const WhoWeAre = () => {
             {/* The Mandate Details */}
             <section className="py-24 px-4 bg-accent text-white">
                 <div className="container mx-auto max-w-5xl">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center font-serif">The Mandate</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center font-serif">The Mandate</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         <div className="space-y-8">
                             <div>
@@ -147,7 +147,7 @@ const WhoWeAre = () => {
             <section className="py-24 px-4 bg-white">
                 <div className="container mx-auto max-w-6xl">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Subsidiary Schemes</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Subsidiary Schemes</h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">We operate through various schemes to fulfill our mandate of global discipleship and charitable service.</p>
                     </div>
 

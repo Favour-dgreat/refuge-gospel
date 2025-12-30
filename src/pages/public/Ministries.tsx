@@ -32,10 +32,10 @@ const Ministries = () => {
     };
 
     return (
-        <div className="bg-black min-h-screen pt-24 overflow-hidd">
+        <div className="bg-black min-h-screen pt-24 overflow-hidden">
             {/* Header */}
             <section className="bg-accent text-white py-24 px-4 text-center">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Ministries & Departments</h1>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Ministries & Departments</h1>
                 <p className="text-xl text-white/80 max-w-2xl mx-auto">
                     Serving God through service to humanity. Find where you belong in the body of Christ.
                 </p>
