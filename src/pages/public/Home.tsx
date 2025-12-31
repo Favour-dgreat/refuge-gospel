@@ -26,6 +26,18 @@ const Home = () => {
                     id: doc.id,
                     ...doc.data()
                 }));
+
+                // Helper to parse date string like "April 21st, 2025"
+                const parseDate = (dateStr: string) => {
+                    if (!dateStr) return 0;
+                    // Remove ordinal suffixes (st, nd, rd, th)
+                    const cleanDate = dateStr.replace(/(\d+)(st|nd|rd|th)/, '$1');
+                    return new Date(cleanDate).getTime();
+                };
+
+                // Sort by date (ascending - upcoming first)
+                eventsData.sort((a: any, b: any) => parseDate(a.date) - parseDate(b.date));
+
                 setEvents(eventsData);
             } catch (error) {
                 console.error("Error fetching events:", error);
@@ -144,14 +156,14 @@ const Home = () => {
                             </div>
 
                             <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                                From 1997 to date, God has authored every chapter of our story,
-                                increasingly bringing the Gospel to the unsaved, transforming the lives of people,
-                                and raising disciples for Christ—globally.
+                                Refuge Gospel Family is a church of all race, Colour and Class. The Church is revolves in global discipleship, Missions Work and Charitable Sources aimed at humanity, peace for Kingdom growth: this is our Divine Commission and Mandate.
                             </p>
 
-                            <button className="bg-accent text-white px-10 py-4 rounded-full font-bold uppercase tracking-wide hover:opacity-90 transition-opacity shadow-lg">
-                                Learn More
-                            </button>
+                            <a href="who-we-are">
+                                <button className="bg-accent text-white px-10 py-4 rounded-full font-bold uppercase tracking-wide hover:opacity-90 transition-opacity shadow-lg">
+                                    Learn More
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -166,8 +178,8 @@ const Home = () => {
 
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="text-center mb-16 space-y-4">
-                        <h2 className="text-4xl md:text-5xl font-bold text-white">Your Faith Walk</h2>
-                        <p className="text-white/80 font-medium">No matter where you are in your faith journey, there is always a next step.</p>
+                        <h2 className="text-4xl md:text-5xl font-bold text-white">Your Place of Safety </h2>
+                        <p className="text-white/80 font-medium">Be rest assured of God's security in his word at Refuge Gospel International Church (This is a Home of Safety)</p>
                     </div>
 
                     <div className="grid md:grid-cols-4 gap-6">
@@ -176,10 +188,10 @@ const Home = () => {
                             <img src={img4} alt="Learn" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
                             <div className="absolute top-6 left-6">
-                                <span className="text-white/80 text-xs font-bold uppercase tracking-widest border-b border-white/30 pb-1">Learn</span>
+                                <span className="text-white/80 text-xs font-bold uppercase tracking-widest border-b border-white/30 pb-1">Fellowship</span>
                             </div>
                             <div className="absolute bottom-10 left-6">
-                                <h3 className="text-2xl font-bold text-white leading-tight">About The<br />Church</h3>
+                                <h3 className="text-2xl font-bold text-white leading-tight">Church of all race, Colour and <br />Class</h3>
                             </div>
                         </div>
 
@@ -191,19 +203,19 @@ const Home = () => {
                                 <span className="text-white/80 text-xs font-bold uppercase tracking-widest border-b border-white/30 pb-1">Worship</span>
                             </div>
                             <div className="absolute bottom-10 left-6">
-                                <h3 className="text-2xl font-bold text-white leading-tight">View<br />Service Times</h3>
+                                <h3 className="text-2xl font-bold text-white leading-tight">Worship<br />like never before</h3>
                             </div>
                         </div>
 
                         {/* Card 3 */}
                         <div className="group relative h-[300px] md:h-[400px] rounded-[30px] overflow-hidden cursor-pointer shadow-xl">
-                            <img src={img6} alt="Get Involved" className="w-full h-full object-cover" />
-                            <div className="absolute inset-0 bg-purple-900/40 " />
+                            <img src={img6} alt="Get Involved" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                            <div className="absolute inset-0 bg-purple-900/40 group-hover:bg-black/50 transition-colors" />
                             <div className="absolute top-6 left-6">
-                                <span className="text-white/80 text-xs font-bold uppercase tracking-widest border-b border-white/30 pb-1">Get Involved</span>
+                                <span className="text-white/80 text-xs font-bold uppercase tracking-widest border-b border-white/30 pb-1">The Word</span>
                             </div>
                             <div className="absolute bottom-10 left-6">
-                                <h3 className="text-2xl font-bold text-white leading-tight">Upcoming<br />Programs</h3>
+                                <h3 className="text-2xl font-bold text-white leading-tight">Sound<br />Teaching of the Gospel of Our Lord Jesus Christ</h3>
                             </div>
                         </div>
 
@@ -212,10 +224,10 @@ const Home = () => {
                             <img src={img9} alt="Give" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
                             <div className="absolute top-6 left-6">
-                                <span className="text-white/80 text-xs font-bold uppercase tracking-widest border-b border-white/30 pb-1">Give</span>
+                                <span className="text-white/80 text-xs font-bold uppercase tracking-widest border-b border-white/30 pb-1">Giving</span>
                             </div>
                             <div className="absolute bottom-10 left-6">
-                                <h3 className="text-2xl font-bold text-white leading-tight">Give<br />Offerings</h3>
+                                <h3 className="text-2xl font-bold text-white leading-tight">We Believe in giving of Seeds, Tithe & <br />Offerings for financial prosperity</h3>
                             </div>
                         </div>
                     </div>
@@ -434,7 +446,7 @@ const Home = () => {
                                     <p className="text-2xl md:text-3xl font-light text-white">8:00am <span className="text-white/40 mx-2">-</span> 11:00am</p>
                                     <p className="text-sm text-white/60 font-mono uppercase tracking-widest">GMT +1</p>
                                 </div>
-                                 <div className="space-y-3">
+                                <div className="space-y-3">
                                     <div className="flex items-center justify-center gap-3 text-[#FFB86C]">
                                         <div className="p-2 bg-white/10 rounded-full">
                                             <Calendar className="w-6 h-6" />
