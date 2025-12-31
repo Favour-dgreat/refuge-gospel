@@ -44,7 +44,7 @@ const WhoWeAre = () => {
                             We preach Refuge Gospel Household to the oppressed, bondsmen, the afflicted and the destitute man in his/her State Of predicament to be saved, delivered, empowered, established to have Christ whole solace of the spirit, Soul and body (Matthew 11:28-30, Isaiah 42:5-12).
                         </p>
                         <p>
-                            We are out to establish, maintain and operate subsidiary and charitable social service such as institutions, Schools, Hospitals, liberals, employment centres, departmental stores, and social welfare centers / schemes to aid the Fulfillment of our Commission and Mandate.
+                            We are out to establish, maintain and operate subsidiary and charitable social service such as institutions, Schools, Hospitals, Libraries, employment centres, departmental stores, and social welfare centers / schemes to aid the Fulfillment of our Commission and Mandate.
                         </p>
                     </div>
                 </div>
@@ -131,11 +131,13 @@ const WhoWeAre = () => {
                             <div>
                                 <h4 className="text-xl font-bold mb-2 text-white/90 uppercase tracking-widest">Victory</h4>
                                 <p className="text-3xl font-bold">Victorious Life against the state of unpredicament</p>
-                                <p className="text-white/60 font-mono mt-1">Luke 8:35, Acts 18:24-28</p>
+                                <p className="text-white/60 font-mono mt-1">Luke 8:35 </p>
                             </div>
                             <div>
                                 <h4 className="text-xl font-bold mb-2 text-white/90 uppercase tracking-widest">Leadership</h4>
                                 <p className="text-3xl font-bold">Leadership hubs for a center stage of greatness, a Citadel of development and fulfilment.</p>
+                                <p className="text-white/60 font-mono mt-1"> Acts 18:24-28</p>
+
                             </div>
                         </div>
                     </div>

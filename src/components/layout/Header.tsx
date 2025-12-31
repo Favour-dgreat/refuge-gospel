@@ -19,6 +19,7 @@ const Header = () => {
         { name: 'Home', path: '/' },
         { name: 'Who We Are', path: '/who-we-are' },
         { name: 'Ministries', path: '/ministries' },
+        { name: 'Missions', path: '/church-planting-missions' },
         { name: 'Governance', path: '/governance' },
         { name: 'Contact', path: '/contact' },
     ];

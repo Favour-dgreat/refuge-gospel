@@ -8,6 +8,7 @@ import Dashboard from './pages/admin/Dashboard';
 import WhoWeAre from './pages/public/WhoWeAre';
 import Ministries from './pages/public/Ministries';
 import Governance from './pages/public/Governance';
+import ChurchPlantingAndMissions from './pages/public/ChurchPlanting&Missions';
 import Contact from './pages/public/Contact';
 
 function App() {
@@ -28,6 +29,11 @@ function App() {
         <Route path="/ministries" element={
           <Layout>
             <Ministries />
+          </Layout>
+        } />
+        <Route path="/church-planting-missions" element={
+          <Layout>
+            <ChurchPlantingAndMissions />
           </Layout>
         } />
         <Route path="/governance" element={

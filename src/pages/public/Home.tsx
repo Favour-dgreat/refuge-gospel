@@ -441,7 +441,7 @@ const Home = () => {
                                         </div>
                                         <h4 className="text-xl font-bold uppercase tracking-wider">Monday Bible Study Service</h4>
                                     </div>
-                                    <p className="text-2xl md:text-3xl font-light text-white">6:00pm <span className="text-white/40 mx-2">-</span> 11:00am</p>
+                                    <p className="text-2xl md:text-3xl font-light text-white">6:00pm</p>
                                     <p className="text-sm text-white/60 font-mono uppercase tracking-widest">GMT +1</p>
                                 </div>
 
